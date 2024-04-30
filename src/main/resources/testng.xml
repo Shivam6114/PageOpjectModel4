@@ -1,17 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="FREE CRM Application Test Automation Test Suite">
-
+<suite name="Amari Kai SailPoint Automation Test Suite">
 	<listeners>
 		<listener class-name="com.qa.ExtentReportListener.ExtentReporterNG" />
 	</listeners>
 
-
-	<test name="Free CRM App Test Cases">
+	<test name="SailPoint Automation Test Cases">
 		<classes>
+		
+			<!-- class name="com.crm.qa.testcases.ManagerRequestAddAccessTest"></class>
+			<class name="com.crm.qa.testcases.CheckRequestStatusTest"></class>	
+			<class name="com.crm.qa.testcases.CancelAccessRequestTest"></class>
+			<class name="com.crm.qa.testcases.TaskPageTest"></class>
+			
+			<class name="com.crm.qa.testcases.ManagerRequestAddAccessTest"></class>
+			<class name="com.crm.qa.testcases.CheckRequestStatusTest"></class>	
+			<class name="com.crm.qa.testcases.AppOwnerApprovalTest"></class>
+			<class name="com.crm.qa.testcases.TaskPageTest"></class>
+			
+			<class name="com.crm.qa.testcases.ManagerRequestRemoveAccessTest"></class>
+			<class name="com.crm.qa.testcases.CheckRequestStatusTest"></class>
+			<class name="com.crm.qa.testcases.AppOwnerApprovalTest"></class>		
+			<class name="com.crm.qa.testcases.TaskPageTest"></class>
+			
+			<class name="com.crm.qa.testcases.ManagerRequestAddAccessTest"></class>
+			<class name="com.crm.qa.testcases.CheckRequestStatusTest"></class>
+			<class name="com.crm.qa.testcases.AppOwnerRejectPendingApprovalTest"></class>		
+			<class name="com.crm.qa.testcases.RefreshIdentityCubeTaskTest"></class>
+			<class name="com.crm.qa.testcases.PerformMaintenanceTaskTest"></class>
+			<class name="com.crm.qa.testcases.ADAccountAggregationTaskTest"></class -->
+			
+			<!-- ******* Health Check *******></class -->
 			<class name="com.crm.qa.testcases.LoginPageTest"></class>
-			<class name="com.crm.qa.testcases.HomePageTest"></class>
-			<class name="com.crm.qa.testcases.ContactsPageTest"></class>
+			<class name="com.crm.qa.testcases.RefreshIdentityCubeTaskTest"></class>
+			<class name="com.crm.qa.testcases.PerformMaintenanceTaskTest"></class>
+			<class name="com.crm.qa.testcases.ADAccountAggregationTaskTest"></class>
+			
+			<!-- class name="com.crm.qa.testcases.HomePageTest"></class -->
 
 		</classes>
 	</test>

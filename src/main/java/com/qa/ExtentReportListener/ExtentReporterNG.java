@@ -29,7 +29,7 @@ public class ExtentReporterNG implements IReporter {
 			String outputDirectory) {
 		extent = new ExtentReports(outputDirectory + File.separator
 				+ "Extent.html", true);
-
+		//System.out.println("Inside of generateReport");
 		for (ISuite suite : suites) {
 			Map<String, ISuiteResult> result = suite.getResults();
 
@@ -39,6 +39,7 @@ public class ExtentReporterNG implements IReporter {
 				buildTestNodes(context.getPassedTests(), LogStatus.PASS);
 				buildTestNodes(context.getFailedTests(), LogStatus.FAIL);
 				buildTestNodes(context.getSkippedTests(), LogStatus.SKIP);
+				System.out.println("Printing Extent Reports: "+context.toString());
 			}
 		}
 
@@ -66,6 +67,8 @@ public class ExtentReporterNG implements IReporter {
 							+ "ed");
 				}
 
+				//System.out.println("Inside of builTestNodes");
+				
 				extent.endTest(test);
 			}
 		}

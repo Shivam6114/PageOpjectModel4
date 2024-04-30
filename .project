@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>FreeCRMTest</name>
+	<name>SailPoint</name>
 	<comment></comment>
 	<projects>
 	</projects>
@@ -20,4 +20,11 @@
 		<nature>org.eclipse.jdt.core.javanature</nature>
 		<nature>org.eclipse.m2e.core.maven2Nature</nature>
 	</natures>
+	<linkedResources>
+		<link>
+			<name>src/main/java/com/crm/qa/testdata/dataSheet.xlsx</name>
+			<type>1</type>
+			<location>C:/Users/info/Documents/excelData/dataSheet.xlsx</location>
+		</link>
+	</linkedResources>
 </projectDescription>

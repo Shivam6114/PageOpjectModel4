@@ -9,10 +9,11 @@ import com.crm.qa.base.TestBase;
 import com.crm.qa.pages.ContactsPage;
 import com.crm.qa.pages.HomePage;
 import com.crm.qa.pages.LoginPage;
+import com.crm.qa.pages.LoginToSailPoint;
 import com.crm.qa.util.TestUtil;
 
 public class HomePageTest extends TestBase {
-	LoginPage loginPage;
+	LoginToSailPoint LoginToSailPoint;
 	HomePage homePage;
 	TestUtil testUtil;
 	ContactsPage contactsPage;
@@ -31,8 +32,8 @@ public class HomePageTest extends TestBase {
 		initialization();
 		testUtil = new TestUtil();
 		contactsPage = new ContactsPage();
-		loginPage = new LoginPage();
-		homePage = loginPage.login(prop.getProperty("username"), prop.getProperty("password"));
+		LoginToSailPoint = new LoginToSailPoint();
+		homePage = LoginToSailPoint.login(prop.getProperty("username"), prop.getProperty("password"));
 	}
 	
 	
