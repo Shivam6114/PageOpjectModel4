@@ -37,7 +37,8 @@ jobs:
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload entire repository
-          path: './sailpoint-results/reports/html-report'
+          path: '.'
+          # path: './sailpoint-results/reports/html-report'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
